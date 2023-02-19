@@ -1,0 +1,13 @@
+[user]
+	name = harryob
+	email = 55142896+harryob@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINTwSKSwq/SaOaH944pb6w63SNJqCW9nPY7dLad985DW
+[core]
+	excludesfile = /Users/harry/.gitignore_global
+[commit]
+	template = /Users/harry/.stCommitMsg
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
