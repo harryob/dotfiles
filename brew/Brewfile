@@ -1,0 +1,86 @@
+# necessary default taps!
+tap "homebrew/autoupdate"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+
+# realistically we'll already have this, but
+brew "chezmoi"
+
+# ! coding stuff
+
+brew "docker"
+brew "dotnet"
+brew "exercism"
+brew "git"
+brew "go"
+tap "go-task/tap"
+brew "go-task/tap/go-task"
+brew "gh"
+brew "nvm"
+brew "ruby"
+brew "ruby-install"
+brew "rust-analyzer"
+brew "rustup-init"
+brew "automake"
+
+# ! update zsh
+brew "zsh"
+
+# ! unbeatable terminal
+cask "wezterm"
+
+# ! our text editor of choice...
+brew "neovim"
+
+# ! my browser, sue me
+cask "eloston-chromium"
+
+# ! we use this to find everything
+cask "alfred"
+
+# ! need a nerd font for everything pretty in a terminal
+cask "font-hack-nerd-font"
+
+# ! handy utilities
+brew "btop"
+brew "ffmpeg"
+brew "hugo"
+brew "imagemagick"
+# brew "ripgrep"
+brew "jq"
+brew "lsd"
+brew "neofetch"
+brew "portaudio"
+brew "spotify_player"
+brew "tmux"
+brew "tre-command"
+brew "wget"
+brew "yt-dlp"
+tap "spicetify/tap"
+brew "spicetify/tap/spicetify-cli"
+tap "veeso/termscp"
+brew "veeso/termscp/termscp"
+
+# ! big boy GUI programs
+cask "audacity"
+cask "bartender" # declutters the status bar, so necessary
+cask "discord"
+cask "obsidian"
+cask "rectangle"
+cask "spotify"
+cask "steam"
+cask "vlc"
+brew "baobab" # disk space visualiser, quite neat
+
+# ! secrets manager
+tap "1password/tap"
+cask "1password"
+cask "1password-cli"
+
+# need this for our next step...
+brew "mas"
+
+mas "NordVPN", id: 905953485
+mas "Things", id: 904280696
+mas "WhatsApp", id: 1147396723
