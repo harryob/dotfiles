@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# brewfile hash: {{ include "dot_Brewfile" | sha256sum }}
+brew bundle cleanup --force --global
+brew bundle install --force --global
