@@ -43,11 +43,12 @@ cask "alfred"
 cask "font-hack-nerd-font"
 
 # ! handy utilities
+brew "coreutils"
 brew "btop"
 brew "ffmpeg"
 brew "hugo"
 brew "imagemagick"
-# brew "ripgrep"
+brew "ripgrep"
 brew "jq"
 brew "lsd"
 brew "neofetch"
