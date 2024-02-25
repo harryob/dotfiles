@@ -1,0 +1,33 @@
+name: "Compile Dotfiles"
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  compile_dotfiles:
+    name: Compile Dotfles
+    runs-on: macos-latest
+    steps:
+      - name: Install Chezmoi
+        run: sh -c "$(curl -fsLS get.chezmoi.io)"
+
+      - name: Initialise Dotfiles
+        run: chezmoi init harryob
+
+      - name: Output Dotfiles
+        run: mkdir /output && chezmoi apply --destination /output
+
+      - name: Checkout Output Branch
+        uses: actions/checkout@v3
+        with:
+          ref: compiled
+
+      - name: Move Output and Commit
+        run: |
+          mv /output/* . 
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "compiled dotfiles"
+          git push
