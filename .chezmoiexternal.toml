@@ -9,6 +9,11 @@
     refreshPeriod = "168h"
 
 [".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
-   type = "git-repo"
-   url = "https://github.com/zsh-users/zsh-autosuggestions"
-   refreshPeriod = "168h"
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zsh-autosuggestions"
+    refreshPeriod = "168h"
+
+[".theme/nightfox.nvim"]
+    type = "git-repo"
+    url = "https://github.com/EdenEast/nightfox.nvim"
+    refreshPeriod = "168h"
