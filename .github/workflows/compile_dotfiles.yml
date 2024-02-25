@@ -13,10 +13,10 @@ jobs:
         run: sh -c "$(curl -fsLS get.chezmoi.io)"
 
       - name: Initialise Dotfiles
-        run: chezmoi init harryob
+        run: ./bin/chezmoi init harryob
 
       - name: Output Dotfiles
-        run: mkdir /output && chezmoi apply --destination /output
+        run: mkdir /output && ./bin/chezmoi apply --destination /output
 
       - name: Checkout Output Branch
         uses: actions/checkout@v3
