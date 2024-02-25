@@ -34,13 +34,8 @@ return {
 	  }
 	} },
 	{
-	  "NeogitOrg/neogit",
-	  dependencies = {
-	  "nvim-lua/plenary.nvim",         -- required
-	  "sindrets/diffview.nvim",        -- optional - Diff integration
-	  "nvim-telescope/telescope.nvim", 
-	  },
-	  config = true
+	  'kdheepak/lazygit.nvim',
+	  dependencies = { 'nvim-lua/plenary.nvim' }
 	},
 	{
 	  "folke/noice.nvim",
@@ -52,14 +47,7 @@ return {
 		command_palette = true,
 	    }
 	  },
-	  dependencies = {
-	    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-	    "MunifTanjim/nui.nvim",
-	    -- OPTIONAL:
-	    --   `nvim-notify` is only needed, if you want to use the notification view.
-	    --   If not available, we use `mini` as the fallback
-	    "rcarriga/nvim-notify",
-	    }
+	  dependencies = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" }
 	},
 	{
 	  "epwalsh/obsidian.nvim",

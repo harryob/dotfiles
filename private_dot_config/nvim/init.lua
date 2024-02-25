@@ -35,6 +35,10 @@ wk.register({
     name = "browser",
     o = { "<cmd>BrowserPreview<cr>", "Open Browser" },
   },
+  g = {
+    name = "git",
+    g = { "<cmd>LazyGit<cr>", "LazyGit" },
+  },
 }, { prefix = "<leader>" })
 
 wk.register({
