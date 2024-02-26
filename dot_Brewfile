@@ -25,6 +25,8 @@ brew "ruby-install"
 brew "rust-analyzer"
 brew "rustup-init"
 brew "automake"
+brew "cmake"
+brew "luarocks"
 
 # ! update zsh
 brew "zsh"
