@@ -9,7 +9,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply harryob -P
 ```
 # text editor 
 
-i use [nvim](./dot_config/nivm) as my text editor, supplemented by vscode for some funny niche languages without a neovim lsp
+i use [nvim](./dot_config/nvim) as my text editor, supplemented by vscode for some funny niche languages without a neovim lsp
 
 # wezterm
 
