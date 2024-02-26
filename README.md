@@ -11,7 +11,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply harryob -P
 
 i use [nvim](./dot_config/nivm) as my text editor, supplemented by vscode for some funny niche languages without a neovim lsp
 
-# wezterm
+# wezterm
 
 i love this terminal editor more than anything - and it's got a very minimal config (once you've parsed how to make a config) - that lives [here](./dot_config/wezterm/wezterm.lua)
 
