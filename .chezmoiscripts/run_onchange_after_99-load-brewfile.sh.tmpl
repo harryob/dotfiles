@@ -4,7 +4,7 @@
 
 EXTRA_ARGS="--global"
 
-{{ if env "WORKFLOW" -}}
+{{- if eq .chezmoi.username "runner" }}
 
 EXTRA_ARGS="--file ./output/.Brewfile" 
 
