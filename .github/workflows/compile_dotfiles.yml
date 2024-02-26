@@ -19,7 +19,7 @@ jobs:
         run: ./bin/chezmoi init harryob
 
       - name: Output Dotfiles
-        run: mkdir ./output && ./bin/chezmoi apply --destination ./output
+        run: mkdir ./output && ./bin/chezmoi data && ./bin/chezmoi apply --destination ./output
 
       - name: Checkout Output Branch
         uses: actions/checkout@v3
