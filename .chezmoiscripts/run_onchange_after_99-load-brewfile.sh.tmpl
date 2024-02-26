@@ -10,5 +10,8 @@ EXTRA_ARGS="--file ./output/.Brewfile"
 
 {{ end -}}
 
+echo $PWD
+ls
+
 brew bundle cleanup --force ${EXTRA_ARGS}
 brew bundle install --force ${EXTRA_ARGS}
