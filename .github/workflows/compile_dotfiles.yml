@@ -9,6 +9,11 @@ jobs:
     name: Compile Dotfles
     runs-on: macos-latest
     steps:
+      - name: Checkout Output Branch
+        uses: actions/checkout@v3
+        with:
+          ref: compiled
+
       - name: Install Chezmoi
         run: sh -c "$(curl -fsLS get.chezmoi.io)"
 
@@ -16,18 +21,10 @@ jobs:
         run: ./bin/chezmoi init harryob
 
       - name: Output Dotfiles
-        run: mkdir output && ./bin/chezmoi apply --destination output
-
-      - name: Checkout Output Branch
-        uses: actions/checkout@v3
-        with:
-          ref: compiled
+        run: mkdir output && ./bin/chezmoi apply --destination .
 
       - name: Move Output and Commit
         run: |
-          echo $PWD
-          ls -la
-          mv output/* . 
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
