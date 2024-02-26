@@ -12,8 +12,14 @@ return {
 
 		require('vscode').load()
 	end },
-	]]--
-	{ "EdenEast/nightfox.nvim", init = function() vim.cmd.colorscheme "nordfox" end },
+	]]
+	--
+	{
+		"EdenEast/nightfox.nvim",
+		init = function()
+			vim.cmd.colorscheme("nordfox")
+		end,
+	},
 	--[[
 	{ "catppuccin/nvim",
 	  name = "catppuccin",
@@ -21,5 +27,6 @@ return {
 	  init = function() vim.cmd.colorscheme "catppuccin" end,
 	  opts = { flavour = "frappe" }
 	}
-	]]--
+	]]
+	--
 }
