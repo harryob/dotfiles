@@ -2,16 +2,5 @@
 
 # brewfile hash: {{ include "dot_Brewfile" | sha256sum }}
 
-EXTRA_ARGS="--global"
-
-{{- if eq .chezmoi.username "runner" }}
-
-EXTRA_ARGS="--file ./output/.Brewfile" 
-
-{{ end -}}
-
-echo $PWD
-ls -la
-
-brew bundle cleanup --force ${EXTRA_ARGS}
-brew bundle install --force ${EXTRA_ARGS}
+brew bundle cleanup --force --file .Brewfile
+brew bundle install --force --file .Brewfile
