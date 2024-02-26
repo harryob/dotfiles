@@ -18,7 +18,7 @@ jobs:
         run: sh -c "$(curl -fsLS get.chezmoi.io)"
 
       - name: Initialise Dotfiles
-        run: ./bin/chezmoi init harryob
+        run: ./bin/chezmoi init harryob -P
 
       - name: Output Dotfiles
         run: mkdir output && ./bin/chezmoi apply --destination .
