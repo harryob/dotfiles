@@ -90,20 +90,5 @@ return {
       end,
     },
   },
-  {
-    "HiPhish/rainbow-delimiters.nvim",
-    main = "rainbow-delimiters.setup",
-    opts = {
-      highlight = {
-        "RainbowDelimiterRed",
-        "RainbowDelimiterYellow",
-        "RainbowDelimiterBlue",
-        "RainbowDelimiterOrange",
-        "RainbowDelimiterGreen",
-        "RainbowDelimiterViolet",
-        "RainbowDelimiterCyan",
-      },
-    },
-  },
   { "akinsho/toggleterm.nvim", opts = { open_mapping = "<leader>t", winbar = { enabled = true } } },
 }
