@@ -10,5 +10,7 @@ EXTRA_ARGS="--file ./output/.Brewfile"
 
 {{ end -}}
 
+./bin/chezmoi data
+
 brew bundle cleanup --force ${EXTRA_ARGS}
 brew bundle install --force ${EXTRA_ARGS}
