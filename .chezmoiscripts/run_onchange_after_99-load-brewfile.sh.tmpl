@@ -1,5 +1,14 @@
 #!/bin/bash
 
 # brewfile hash: {{ include "dot_Brewfile" | sha256sum }}
-brew bundle cleanup --force --global
-brew bundle install --force --global
+
+EXTRA_ARGS="--global"
+
+{{ if env "WORKFLOW" -}}
+
+EXTRA_ARGS="--file ./output/Brewfile" 
+
+{{ end -}}
+
+brew bundle cleanup --force ${EXTRA_ARGS}
+brew bundle install --force ${EXTRA_ARGS}

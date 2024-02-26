@@ -4,6 +4,9 @@ on:
     branches:
     - main
 
+env:
+  WORKFLOW: true
+
 jobs:
   compile_dotfiles:
     name: Compile Dotfles
