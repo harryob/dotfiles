@@ -1,5 +1,7 @@
 # harry's dotfiles
 
+![screenshot of neovim](https://github.com/harryob/dotfiles/blob/main/.github/assets/screenshot.png)
+
 my dotfiles! uses [chezmoi](https://chezmoi.io/) to keep stuff organised, which is why this branch looks kinda funny! if you wanna see what the dotfiles look like after being processed, check out the [compiled output branch](https://github.com/harryob/dotfiles/tree/compiled), which is more or less what all these files end up looking like (on a MacOS install, that is)
 
 chezmoi allows us a one line install for the dotfiles, which is very neat. as part of the install process, we also install chezmoi, so we can cleanup this utility after its been used to bootstrap itself
