@@ -90,4 +90,19 @@ return {
       end,
     },
   },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    main = "rainbow-delimiters.setup",
+    opts = {
+      highlight = {
+        "RainbowDelimiterRed",
+        "RainbowDelimiterYellow",
+        "RainbowDelimiterBlue",
+        "RainbowDelimiterOrange",
+        "RainbowDelimiterGreen",
+        "RainbowDelimiterViolet",
+        "RainbowDelimiterCyan",
+      },
+    },
+  },
 }
