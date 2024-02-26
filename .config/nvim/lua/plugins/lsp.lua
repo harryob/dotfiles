@@ -2,19 +2,24 @@ return {
   {
     "neovim/nvim-lspconfig",
     priority = 1,
-    config = function()
-      local lspconfig = require("lspconfig")
-      lspconfig.tsserver.setup({})
-      lspconfig.rust_analyzer.setup({})
-      lspconfig.html.setup({})
-    end,
   },
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",
   "hrsh7th/cmp-cmdline",
-  { "williamboman/mason.nvim", priority = 51, opts = {} },
-  { "williamboman/mason-lspconfig.nvim", opts = { automatic_installation = true } },
+  { "williamboman/mason.nvim", priority = 50, opts = {} },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    priority = 51,
+    opts = { automatic_installation = true },
+    init = function()
+      require("mason-lspconfig").setup_handlers({
+        function(server_name)
+          require("lspconfig")[server_name].setup({})
+        end,
+      })
+    end,
+  },
   {
     "hrsh7th/nvim-cmp",
     config = function()
@@ -73,5 +78,10 @@ return {
       })
     end,
   },
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    main = "nvim-treesitter.configs",
+    opts = { highlight = { enable = true } },
+  },
 }
