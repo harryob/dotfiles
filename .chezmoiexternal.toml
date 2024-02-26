@@ -13,6 +13,11 @@
     url = "https://github.com/zsh-users/zsh-autosuggestions"
     refreshPeriod = "168h"
 
+[".oh-my-zsh/custom/themes/powerlevel"]
+    type = "git-repo"
+    url = "https://github.com/romkatv/powerlevel10k"
+    refreshPeriod = "168h"
+
 [".theme/nightfox.nvim"]
     type = "git-repo"
     url = "https://github.com/EdenEast/nightfox.nvim"
