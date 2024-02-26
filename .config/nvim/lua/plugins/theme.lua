@@ -1,5 +1,5 @@
 return {
-	--[[
+  --[[
 	{ "Mofiqul/vscode.nvim", 
 	lazy = false, 
 	priority = 1000,
@@ -13,14 +13,14 @@ return {
 		require('vscode').load()
 	end },
 	]]
-	--
-	{
-		"EdenEast/nightfox.nvim",
-		init = function()
-			vim.cmd.colorscheme("nordfox")
-		end,
-	},
-	--[[
+  --
+  {
+    "EdenEast/nightfox.nvim",
+    init = function()
+      vim.cmd.colorscheme("nordfox")
+    end,
+  },
+  --[[
 	{ "catppuccin/nvim",
 	  name = "catppuccin",
 	  priority = 1000,
@@ -28,5 +28,5 @@ return {
 	  opts = { flavour = "frappe" }
 	}
 	]]
-	--
+  --
 }
