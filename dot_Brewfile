@@ -26,7 +26,7 @@ brew "rust-analyzer"
 brew "rustup-init"
 brew "automake"
 brew "cmake"
-brew "luarocks"
+brew "stylua"
 
 # ! update zsh
 brew "zsh"

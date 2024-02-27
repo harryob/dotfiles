@@ -85,3 +85,9 @@ defaults write com.apple.dock mineffect -string "scale"
 
 # Don’t animate opening applications from the Dock
 defaults write com.apple.dock launchanim -bool false
+
+# Rectangle specific
+# https://github.com/rxhanson/Rectangle/blob/main/TerminalCommands.md
+
+defaults write com.knollsoft.Rectangle almostMaximizeHeight -float 0.95
+defaults write com.knollsoft.Rectangle almostMaximizeWidth -float 0.95
