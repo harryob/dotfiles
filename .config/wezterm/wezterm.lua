@@ -21,9 +21,9 @@ return {
       }),
     },
     {
-      key = "x",
+      key = "§",
       mods = "SUPER",
-      action = wezterm.action.PaneSelect({}),
+      action = wezterm.action.PaneSelect({ alphabet = "12345689" }),
     },
     {
       key = "d",
