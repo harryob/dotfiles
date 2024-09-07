@@ -7,7 +7,7 @@ fi
 
 export ZSH="$HOME/.oh-my-zsh"
 
-zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode disabled      # update automatically without asking
 
 ZSH_THEME="powerlevel/powerlevel10k"
 
@@ -43,3 +43,5 @@ export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"

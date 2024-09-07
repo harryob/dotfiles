@@ -91,4 +91,13 @@ return {
     },
   },
   { "akinsho/toggleterm.nvim", opts = { open_mapping = "<leader>t", winbar = { enabled = true } } },
+  {
+    "NvChad/nvim-colorizer.lua",
+    opts = {
+      user_default_options = { RRGGBBAA = true, virtualtext = "■", mode = "virtualtext" },
+      filetypes = { "*" },
+    },
+    main = "colorizer",
+    lazy = false,
+  },
 }

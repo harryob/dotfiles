@@ -27,6 +27,9 @@ brew "rustup-init"
 brew "automake"
 brew "cmake"
 brew "stylua"
+brew "php"
+brew "pkg-config"
+brew "zola"
 
 # ! update zsh
 brew "zsh"
@@ -67,6 +70,8 @@ tap "spicetify/tap"
 brew "spicetify/tap/spicetify-cli"
 tap "veeso/termscp"
 brew "veeso/termscp/termscp"
+brew "mpv"
+brew "mailsy"
 
 # ! big boy GUI programs
 cask "audacity"

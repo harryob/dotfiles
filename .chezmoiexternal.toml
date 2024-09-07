@@ -19,7 +19,7 @@
     url = "https://github.com/romkatv/powerlevel10k"
     refreshPeriod = "168h"
 
-[".theme/nightfox.nvim"]
+[".theme/vscode.nvim"]
     type = "git-repo"
-    url = "https://github.com/EdenEast/nightfox.nvim"
+    url = "https://github.com/Mofiqul/vscode.nvim"
     refreshPeriod = "168h"
