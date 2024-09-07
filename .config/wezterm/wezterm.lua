@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 
-local colors = wezterm.color.load_scheme(wezterm.home_dir .. "/.theme/nightfox.nvim/extra/nordfox/wezterm.toml")
+-- local colors = wezterm.color.load_scheme(wezterm.home_dir .. "/.theme/nightfox.nvim/extra/nordfox/wezterm.toml")
+local colors = wezterm.color.load_scheme(wezterm.home_dir .. "/.theme/vscode.nvim/extra/wezterm/vscode-dark.toml")
 
 return {
   window_decorations = "RESIZE",

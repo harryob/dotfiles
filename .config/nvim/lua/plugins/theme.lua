@@ -1,8 +1,9 @@
 return {
   {
-    "EdenEast/nightfox.nvim",
+    "Mofiqul/vscode.nvim",
+    opts = {},
     init = function()
-      vim.cmd.colorscheme("nordfox")
+      require("vscode").load("dark")
     end,
   },
 }
